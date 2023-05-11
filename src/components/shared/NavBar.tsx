@@ -2,7 +2,7 @@ import fondo from "../../assets/img/fondo.svg";
 
 export const NavBar = () => {
   return (
-    <header className="header" id="header" style={{backgroundImage: fondo}}>
+    <header className="header" id="header">
       <nav className="nav">
         <div className="container-brand">
           <a className="container-brand__a" href="/">

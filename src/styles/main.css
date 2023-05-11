@@ -67,9 +67,10 @@ html {
 }
 
 .header {
-  background-image: url("../img/fondo.svg");
+  background-image: url("../assets/img/fondo.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #f8a;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -237,7 +238,7 @@ section {
 .waves {
   height: 50vh;
   width: 100%;
-  background-image: url("../img/waves.svg");
+  background-image: url("../assets/img/waves.svg");
   background-repeat: repeat-x;
   background-size: contain;
   display: flex;
@@ -399,79 +400,49 @@ article {
   margin-bottom: 0;
 }
 
-.carousel {
-  width: 90%;
-  height: 100%;
-  margin: auto;
-  padding-top: 1rem;
-  padding-bottom: 0;
-  /* border: 2px solid aqua; */
-}
-
-.carousel-indicators {
-  /* border: 2px solid red; */
-  margin: 0;
-}
-
-.carousel-inner {
-  /* border: 2px solid greenyellow; */
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-item {
-  /* border: 2px solid red; */
-  width: 100%;
-  height: 100%;
-}
-
 .carousel-card {
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   background: var(--card2-color);
-  width: 50%;
+  width: 100%;
   height: 40vh;
-  min-height: 273px;
-  margin: auto;
   border-radius: 20px;
   /* border: 2px solid red; */
 }
 
 .carousel-card-header {
-  /* border: 2px solid yellow; */
+  /* border: 1px solid yellow; */
   /* padding: 1.5rem; */
   flex: 1.5;
-  flex-shrink: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .carousel-card-header h1 {
   color: var(--secondary-color);
   opacity: 0.2;
   margin: 0;
-  font-size: 10rem;
-  line-height: 0.5rem;
-  padding: 0rem 4rem;
-  padding-top: 1rem;
+  vertical-align: bottom;
+  font-size: 9rem;
+  line-height: 2rem;
+  transform: translate(25px, 10px);
   /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
 }
 
 .carousel-card-body {
-  /* border: 2px solid yellow; */
-  padding: 1rem;
-  flex: 2;
-  flex-shrink: 0;
+  padding: 10px;
+  flex: 3;
 }
 
 .carousel-card-body p {
+  margin: 0;
   padding: 0;
-  font-size: 0.8em;
-  /* line-height: 1.7em; */
+  font-size: 0.6em;
   line-height: normal;
-  letter-spacing: normal;
 }
 
 .carousel-card-footer {
