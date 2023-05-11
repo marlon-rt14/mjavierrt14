@@ -1,11 +1,10 @@
 import {useState} from "react";
+import {AppRoute} from "./routes/AppRouter";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>HOLA MUNDO</h1>
+      <AppRoute />
     </>
   );
 }
