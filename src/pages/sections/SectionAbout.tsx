@@ -19,7 +19,7 @@ export const SectionAbout = () => {
               siempre he sido un apasionado de la informática desde muy joven.
               He estado trabajando con tecnologías de desarrollo web hace 4 años
               y tecnologías para backend por 3 años.
-              <strong>Me gustan los desafíos</strong> y superarme a mí mismo
+              <strong> Me gustan los desafíos</strong> y superarme a mí mismo
               involucrándome en proyectos de mediana y alta complejidad sin
               miedo a <strong>aprender nuevas tecnologías</strong> y nunca
               perder la oportunidad de ganar nuevos conocimientos.

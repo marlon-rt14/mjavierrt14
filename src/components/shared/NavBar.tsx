@@ -1,4 +1,5 @@
 import fondo from "../../assets/img/fondo.svg";
+import imageHeader from "../../assets/img/home-intellisense.svg";
 
 export const NavBar = () => {
   return (
@@ -89,7 +90,7 @@ export const NavBar = () => {
               Contáctame
             </a>
             <div className="form-img-cont">
-              <img src="./public/img/home-intellisense.svg" alt="" />
+              <img src={imageHeader} alt="image-header" />
             </div>
           </div>
         </form>

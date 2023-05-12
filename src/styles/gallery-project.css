@@ -1,36 +1,31 @@
-section {
+.section-project {
   all: initial;
 }
 
-.waves {
+#waves-project {
   all: initial;
-  /* border: 1px solid red; */
 }
 
-.waves-up {
+#waves-project.waves-up {
   all: initial;
   display: block;
   height: 30vh;
-  background-image: url("../img/waves.svg");
+  background-image: url("../assets/img/waves.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.waves-middle {
-  all: initial;
-}
-
-.waves-down {
+#waves-project.waves-down {
   all: initial;
   display: block;
   height: 30vh;
-  background-image: url("../img/waves.svg");
+  background-image: url("../assets/img/waves.svg");
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotateZ(180deg);
 }
 
-article {
+.article-project {
   /* all: initial; */
   display: block;
   height: initial;
@@ -40,36 +35,36 @@ article {
   text-align: center;
 }
 
-.gallery-project-mobile {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: 80vh;
-    grid-gap: 15px;
-  }
-
+.gallery-project-mobile,
 .gallery-project {
   flex: 1;
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 80vh;
+  grid-gap: 50px;
+}
+
+.gallery-project {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 200px;
-  grid-gap: 15px;
 }
 
-.gallery-project img, .gallery-project-mobile img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-    transition: transform .3s;
-    cursor: pointer;
+.gallery-project img,
+.gallery-project-mobile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
 }
 
-.gallery-project img:hover, .gallery-project-mobile img:hover {
-    transform: scale(1.1);
+.gallery-project img:hover,
+.gallery-project-mobile img:hover {
+  transform: scale(1.1);
 }
 
 .gallery-project a:first-child {
-    grid-column:  1 / 3;
-    grid-row: 1 / 3;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
 }
