@@ -26,19 +26,73 @@ const INITIAL_PROJECTS: IProjects[] = [
     title: "MOVILITIX",
     description: (
       <div>
-        Esta es una aplicación mobil para la Corporación Favorita desarrollada
+        Esta es una aplicación móvil para la Corporación Favorita desarrollada
         por la empresa{" "}
         <a href="https://www.bitproy.com" target="_blank">
           Bitproy
         </a>
-        , midesempeño en este proyecto fue con tecnologías móviles de frontend e
-        integración de APIs.
+        , mi desempeño en este proyecto fue con tecnologías móviles de frontend
+        e integración de APIs.
       </div>
     ),
     profilePhoto: ProjectIcons.movilitix,
     linkGallery: "/movilitix",
     linkRepository: undefined,
     linkPage: undefined,
+  },
+  {
+    title: "RAPIENTREGA",
+    description: (
+      <div>
+        Esta es una aplicación móvil de delivery desarrollada por la empresa{" "}
+        <a href="https://www.bitproy.com" target="_blank">
+          Bitproy
+        </a>
+        , mi desempeño en este proyecto fue con tecnologías móviles de frontend
+        e integración de APIs.
+      </div>
+    ),
+    profilePhoto: ProjectIcons.rapientrega,
+    linkGallery: "/rapientrega",
+    linkRepository: undefined,
+    linkPage:
+      "https://play.google.com/store/apps/details?id=com.nous.rapientrega&hl=en&gl=US",
+  },
+  {
+    title: "EQUATORIAN",
+    description: (
+      <div>
+        Esta es una plataforma web turística, su uso es para la adminstración de
+        los datos en su versión móvil. Desarrollada para la empresa{" "}
+        <a href="https://www.bitproy.com" target="_blank">
+          Bitproy
+        </a>
+        , mi desempeño en este proyecto fue con tecnologías web para el frontend
+        e integración de APIs.
+      </div>
+    ),
+    profilePhoto: ProjectIcons.equatorian,
+    linkGallery: "/equatorian",
+    linkRepository: undefined,
+    linkPage: undefined,
+  },
+  {
+    title: "D'PIPOS",
+    description: (
+      <div>
+        Esta es una aplicación móvil de delivery desarrollada por la empresa{" "}
+        <a href="https://www.bitproy.com" target="_blank">
+          Bitproy
+        </a>
+        , mi desempeño en este proyecto fue con tecnologías móviles de frontend
+        e integración de APIs y supervisión del backend.
+      </div>
+    ),
+    profilePhoto: ProjectIcons.dpipos,
+    linkGallery: "/dpipos",
+    linkRepository: undefined,
+    linkPage:
+      "https://play.google.com/store/apps/details?id=com.nousclic.piposapp&hl=en&gl=US",
   },
   {
     title: "ILUSTRO",
@@ -54,6 +108,25 @@ const INITIAL_PROJECTS: IProjects[] = [
     ),
     profilePhoto: ProjectIcons.ilustro,
     linkGallery: "/illustro",
+    linkRepository: undefined,
+    linkPage: undefined,
+  },
+  {
+    title: "WE-U",
+    description: (
+      <div>
+        Esta es una plataforma web dirigida hacia el monitoreo y de
+        organizaciones públicas y privadas mediante sectores o áreas del pais,
+        para mejorar la seguridad de los ciudadanos; desarrollada por la empresa{" "}
+        <a href="https://www.bitproy.com" target="_blank">
+          Bitproy
+        </a>
+        , mi desempeño en este proyecto fue con tecnologías web para el frontend
+        e integración de APIs.
+      </div>
+    ),
+    profilePhoto: ProjectIcons.weu,
+    linkGallery: "/weu",
     linkRepository: undefined,
     linkPage: undefined,
   },

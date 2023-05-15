@@ -7,6 +7,10 @@ import {MainLayout} from "../components/shared/MainLayout";
 import {HomePage} from "../pages/HomePage";
 import {MovilitixPage} from "../pages/MovilitixPage";
 import {IlustroPage} from "../pages/IlustroPage";
+import {RapientregaPage} from "../pages/RapientregaPage";
+import {DpiposPage} from "../pages/DpiposPage";
+import {EquatorianPage} from "../pages/EquatorianPage";
+import {WeuPage} from "../pages/WeuPage";
 
 export const AppRoute = () => {
   return (
@@ -17,6 +21,10 @@ export const AppRoute = () => {
         </Route>
         <Route path="/movilitix" element={<MovilitixPage />} />
         <Route path="/illustro" element={<IlustroPage />} />
+        <Route path="/rapientrega" element={<RapientregaPage />} />
+        <Route path="/dpipos" element={<DpiposPage />} />
+        <Route path="/equatorian" element={<EquatorianPage />} />
+        <Route path="/weu" element={<WeuPage />} />
       </Routes>
     </>
   );
