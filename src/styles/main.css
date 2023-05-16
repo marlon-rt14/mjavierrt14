@@ -614,8 +614,9 @@ article {
   border-color: var(--sub-primary-color);
 }
 
-.contact-form input[type="submit"] {
+.cont-sending {
   width: 100%;
+  height: 45px;
   padding: 14px;
   background: var(--gradient-color-box);
   color: #fff;
@@ -626,7 +627,7 @@ article {
   transition: background 0.2s;
 }
 
-.contact-form input[type="submit"]:hover {
+.cont-sending:hover {
   background: var(--sub-gradient-color-box);
 }
 
