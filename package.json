@@ -10,7 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/serialize": "^1.1.2",
+    "@emotion/utils": "^1.2.1",
     "@mantine/carousel": "^6.0.10",
+    "@mantine/core": "^6.0.10",
+    "@mantine/hooks": "^6.0.10",
+    "@uiball/loaders": "^1.2.6",
     "embla-carousel-react": "^8.0.0-rc03",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -9,6 +9,7 @@ import imagen6 from "../assets/img/projects/dpipos/imagen6.svg";
 import imagen7 from "../assets/img/projects/dpipos/imagen7.svg";
 import imagen8 from "../assets/img/projects/dpipos/imagen8.svg";
 import imagen9 from "../assets/img/projects/dpipos/imagen9.svg";
+import {GridItem} from "../components/shared/GridItem";
 
 const GALLERY = [
   imagen1,
@@ -26,13 +27,7 @@ export const DpiposPage = () => {
   return (
     <ProjectTemplate type="gallery-project-mobile" title="Mobile Application">
       {GALLERY.map((img, ind) => {
-        return (
-          <div>
-            <a href={img} target="_blank">
-              <img src={img} alt={`image${ind}`} />
-            </a>
-          </div>
-        );
+        return <GridItem key={ind} img={img} ind={ind} />;
       })}
     </ProjectTemplate>
   );

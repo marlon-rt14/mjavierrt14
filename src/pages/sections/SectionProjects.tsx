@@ -130,6 +130,26 @@ const INITIAL_PROJECTS: IProjects[] = [
     linkRepository: undefined,
     linkPage: undefined,
   },
+  {
+    title: "FAUNA INAIG",
+    description: (
+      <div>
+        Esta es una plataforma web para el registro de todas las especies de
+        animales y plantas, su uso es para la adminstración de la fauna en
+        general con información relevante de cada especie. Desarrollada para la
+        empresa{" "}
+        <a href="https://www.bitproy.com" target="_blank">
+          Bitproy
+        </a>
+        , mi desempeño en este proyecto fue con tecnologías web para el frontend
+        e integración de APIs y Amplify.
+      </div>
+    ),
+    profilePhoto: ProjectIcons.fauna,
+    linkGallery: "/fauna",
+    linkRepository: undefined,
+    linkPage: undefined,
+  },
 ];
 export const SectionPropjects = () => {
   const navigate = useNavigate();
@@ -182,9 +202,9 @@ export const SectionPropjects = () => {
                 },
               }}
             >
-              {projects.map((project) => {
+              {projects.map((project, index) => {
                 return (
-                  <Carousel.Slide>
+                  <Carousel.Slide key={index}>
                     <div className="">
                       <div className="carousel-card">
                         <div className="carousel-card-header">

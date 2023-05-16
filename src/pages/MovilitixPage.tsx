@@ -1,4 +1,5 @@
 import {ProjectTemplate} from "../components/shared/ProjectTemplate";
+import {GridItem} from "../components/shared/GridItem";
 
 import imagen1 from "../assets/img/projects/movilitix/imagen1.svg";
 import imagen2 from "../assets/img/projects/movilitix/imagen2.svg";
@@ -11,7 +12,6 @@ import imagen8 from "../assets/img/projects/movilitix/imagen8.svg";
 import imagen9 from "../assets/img/projects/movilitix/imagen9.svg";
 import imagen10 from "../assets/img/projects/movilitix/imagen10.svg";
 import imagen11 from "../assets/img/projects/movilitix/imagen11.svg";
-import {Link} from "react-router-dom";
 
 const GALLERY = [
   imagen1,
@@ -31,13 +31,7 @@ export const MovilitixPage = () => {
   return (
     <ProjectTemplate type="gallery-project-mobile" title="Mobile Application">
       {GALLERY.map((img, ind) => {
-        return (
-          <div>
-            <a href={img} target="_blank">
-              <img src={img} alt={`image${ind}`} />
-            </a>
-          </div>
-        );
+        return <GridItem key={ind} img={img} ind={ind} />;
       })}
     </ProjectTemplate>
   );

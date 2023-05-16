@@ -1,4 +1,5 @@
 import {ProjectTemplate} from "../components/shared/ProjectTemplate";
+import {GridItem} from "../components/shared/GridItem";
 
 import imagen1 from "../assets/img/projects/rapientrega/imagen1.svg";
 import imagen2 from "../assets/img/projects/rapientrega/imagen2.svg";
@@ -26,13 +27,7 @@ export const RapientregaPage = () => {
   return (
     <ProjectTemplate type="gallery-project-mobile" title="Mobile Application">
       {GALLERY.map((img, ind) => {
-        return (
-          <div>
-            <a href={img} target="_blank">
-              <img src={img} alt={`image${ind}`} />
-            </a>
-          </div>
-        );
+        return <GridItem key={ind} img={img} ind={ind} />;
       })}
     </ProjectTemplate>
   );

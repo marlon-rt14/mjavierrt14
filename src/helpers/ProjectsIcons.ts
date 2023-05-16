@@ -5,6 +5,7 @@ import ilustro from "../assets/img/projects/illustro/index.svg";
 import rapientrega from "../assets/img/projects/rapientrega/index.svg";
 import weu from "../assets/img/projects/weu/index.svg";
 import seafood from "../assets/img/projects/seafood1.jpg";
+import fauna from "../assets/img/projects/fauna/index.png";
 
 export const ProjectIcons = {
   movilitix,
@@ -13,5 +14,6 @@ export const ProjectIcons = {
   ilustro,
   rapientrega,
   weu,
-  seafood
+  seafood,
+  fauna
 };

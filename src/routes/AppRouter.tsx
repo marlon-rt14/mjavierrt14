@@ -11,6 +11,7 @@ import {RapientregaPage} from "../pages/RapientregaPage";
 import {DpiposPage} from "../pages/DpiposPage";
 import {EquatorianPage} from "../pages/EquatorianPage";
 import {WeuPage} from "../pages/WeuPage";
+import {FaunaPage} from "../pages/FaunaPage";
 
 export const AppRoute = () => {
   return (
@@ -25,6 +26,7 @@ export const AppRoute = () => {
         <Route path="/dpipos" element={<DpiposPage />} />
         <Route path="/equatorian" element={<EquatorianPage />} />
         <Route path="/weu" element={<WeuPage />} />
+        <Route path="/fauna" element={<FaunaPage />} />
       </Routes>
     </>
   );
