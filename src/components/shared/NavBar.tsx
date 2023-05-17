@@ -1,12 +1,9 @@
-import {useLayoutEffect} from "react";
+import {useLayoutEffect, useState} from "react";
+import {useTranslation} from "react-i18next";
+import {Toggle} from "rsuite";
 import fondo from "../../assets/img/fondo.svg";
 import imageHeader from "../../assets/img/home-intellisense.svg";
-const words = [
-  "Freelancer",
-  "Web developer",
-  "Backend developer",
-  "Data science learner",
-];
+import {US, ES} from "country-flag-icons/react/3x2";
 
 const runEvents = () => {
   const nav: any = document.querySelector(".nav");
@@ -154,33 +151,38 @@ const runEvents = () => {
   window.addEventListener("scroll", () => verifyScroll());
 };
 
+const words = [
+  "Freelancer",
+  "Web developer",
+  "Backend developer",
+  "Data science learner",
+];
+
 const runTyping = () => {
-  let i = 1;
-  let type_text: any = document.querySelector(".key-text");
-  type_text.textContent = words[0];
-  type_text = document.querySelector(".key-text");
-  type_text.style.animation = `typing 2s steps(${words[i].length}, end) infinite alternate`;
-  type_text.style.width = `${
-    i === 0 ? 10 : i === 1 ? 14 : i === 2 ? 16 : 18
-  }ch`;
-  type_text.textContent = words[i];
-  i++;
-  if (i >= words.length) {
-    i = 0;
-  }
+  let i = 0;
+  setInterval(() => {
+    if (i >= words.length - 1) i = 0;
+    else i++;
+    //let contador: any = document.querySelector(".contador");
+    //contador.textContent = `${i} - ${"a"}`;
+    let type_text: any = document.querySelector(".key-text");
+    type_text.textContent = words[i];
+    //type_text.style.animation = `typing 2s steps(${words[i].length}, end) infinite alternate`;
+    //type_text.style.animation = `typing 2s  infinite alternate ease-in-out`;
+    type_text.style.width = `${
+      i === 0 ? 9 : i === 1 ? 13 : i === 2 ? 16 : 17
+    }ch`;
+  }, 4000);
 };
 
 export const NavBar = () => {
+  const {t, i18n} = useTranslation();
+
   useLayoutEffect(() => {
     runEvents();
+    let type_text: any = document.querySelector(".key-text");
+    type_text.textContent = words[0];
     runTyping();
-    let interval = setInterval(() => {
-      runTyping();
-    }, 4000);
-
-    return () => {
-      clearInterval(interval);
-    };
   }, []);
 
   return (
@@ -188,7 +190,7 @@ export const NavBar = () => {
       <nav className="nav">
         <div className="container-brand">
           <a className="container-brand__a" href="/">
-            <h1 id="brand-h1">Portf</h1>
+            <h1 id="brand-h1">{t("port")}</h1>
             <span id="brand-span" className="">
               olio.
             </span>
@@ -197,28 +199,41 @@ export const NavBar = () => {
         <ul className="nav__ul">
           <li className="nav-item">
             <a className="nav-link" aria-current="page" href="#header">
-              Inicio
+              {t("navHome")}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#section-about">
-              Acerca de
+              {t("navAbout")}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#section-skills">
-              Habilidades
+              {t("navSkills")}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#section-projects">
-              Proyectos
+              {t("navProjects")}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#section-contact">
-              Contacto
+              {t("navContact")}
             </a>
+          </li>
+          <li className="" style={{listStyle: "none"}}>
+            <Toggle
+              checkedChildren={<US />}
+              unCheckedChildren={<ES />}
+              onChange={(checked) => {
+                if (checked) {
+                  i18n.changeLanguage("en");
+                } else {
+                  i18n.changeLanguage("es");
+                }
+              }}
+            />
           </li>
         </ul>
 
@@ -232,27 +247,27 @@ export const NavBar = () => {
             <ul className="nav__ul-res-menu">
               <li className="nav-item-res">
                 <a href="#header" className="item-res">
-                  Inicio
+                  {t("navHome")}
                 </a>
               </li>
               <li className="nav-item-res">
                 <a href="#section-about" className="item-res">
-                  Acerca de
+                  {t("navAbout")}
                 </a>
               </li>
               <li className="nav-item-res">
                 <a href="#section-skills" className="item-res">
-                  Habilidades
+                  {t("navSkills")}
                 </a>
               </li>
               <li className="nav-item-res">
                 <a href="#section-projects" className="item-res">
-                  Proyectos
+                  {t("navProjects")}
                 </a>
               </li>
               <li className="nav-item-res">
                 <a href="#section-contact" className="item-res">
-                  Contacto
+                  {t("navContact")}
                 </a>
               </li>
             </ul>
@@ -261,20 +276,21 @@ export const NavBar = () => {
       </nav>
       <div className="header__div-container">
         <form className="header__form">
-          <p>Hola, mi nombre es</p>
+          <p>{t("hello my name is")}</p>
           <h2>Marlon Javier Ruiz</h2>
+          <p className="contador" hidden></p>
           <p>
-            y soy &nbsp; <span className="key-text"></span>
+            {t("i am")} &nbsp; <span className="key-text"></span>
           </p>
-          <div className="form-footer">
+          <div className="form-footer ">
             <a href="#section-contact" className="button">
-              Contáctame
+              {t("contact me")}
             </a>
-            <div className="form-img-cont">
-              <img src={imageHeader} alt="image-header" />
-            </div>
           </div>
         </form>
+        <div className="form-img-cont">
+          <img src={imageHeader} alt="image-header" />
+        </div>
       </div>
     </header>
   );

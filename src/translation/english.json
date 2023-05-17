@@ -1,0 +1,15 @@
+{
+  "translation": {
+    "port": "Port",
+    "navHome": "Home",
+    "navAbout": "About",
+    "navSkills": "Skills",
+    "navProjects": "Projects",
+    "navContact": "Contact",
+
+    "hello my name is": "Hello, my name is",
+    "i am": "and I'm",
+
+    "contact me": "Contact me"
+  }
+}

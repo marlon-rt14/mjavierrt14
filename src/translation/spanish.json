@@ -1,0 +1,15 @@
+{
+  "translation": {
+    "port": "Porta",
+    "navHome": "Inicio",
+    "navAbout": "Acerca de",
+    "navSkills": "Habilidades",
+    "navProjects": "Proyectos",
+    "navContact": "Contacto",
+
+    "hello my name is": "Hola, mi nombre es",
+    "i am": "y soy",
+
+    "contact me": "Contáctame"
+  }
+}
