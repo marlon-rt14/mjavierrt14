@@ -10,6 +10,19 @@
     "hello my name is": "Hello, my name is",
     "i am": "and I'm",
 
-    "contact me": "Contact me"
+    "contact me": "Contact me",
+    "send": "Send",
+    "download cv": "Download CV",
+    "name": "Name",
+    "address": "Address",
+    "phone": "Phone",
+    "send me a message": "Send me a message",
+    "enter your name": "Enter you name",
+    "enter your email": "Enter your e-mail",
+    "leave your message": "Leave your message...",
+
+    "about me": "About me",
+    "my projects": "My Projects",
+    "my skills": "My Skills"
   }
 }

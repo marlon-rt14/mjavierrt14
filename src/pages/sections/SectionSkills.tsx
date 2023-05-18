@@ -1,6 +1,10 @@
+import {useTranslation} from "react-i18next";
 import {MyIcons} from "../../helpers/MyIcons";
 
 export const SectionSkills = () => {
+  const {i18n, t} = useTranslation();
+  const currentLanguage = i18n.language;
+
   return (
     <section className="section-skills" id="section-skills">
       <div className="waves waves-up"></div>
@@ -8,27 +12,49 @@ export const SectionSkills = () => {
       <div className="waves waves-middle"></div>
       <article className="aritcle-skills">
         <div className="article-title skills-title">
-          <h1>Mis Habilidades</h1>
+          <h1>{t("my skills")}</h1>
         </div>
         <div className="article-cont skills-cont">
           <div className="article-des skills-des">
-            <p>
-              Mi experiencia en el maquetado con HTML, CSS, frameworks y
-              librerías para el frontend , así como el manejo del DOM con
-              JavaScript es bastante extensa ya que he desarrollado varios
-              proyectos personales, startups y pequeñas empresas. La creación de
-              aplicaciones web; páginas web y landing pages, creación de
-              aplicaciones móviles con React Native (Expo), manejo de Bases de
-              datos SQL en mayor parte y NoSQL en pocos proyectos, creacion de
-              servicios RESTfull, integración con Google Maps, desarrollo del
-              backend usando Python con Flask, y ReactJS son mi mayor fortaleza.
-              <br />
-              <br />
-              <i>
-                He desarrollado proyectos con más tecnologías de las
-                mencionadas, pero no son tan frecuentes.
-              </i>
-            </p>
+            {currentLanguage === "es" && (
+              <p>
+                Mi experiencia en el maquetado con HTML, CSS, frameworks y
+                librerías para el frontend , así como el manejo del DOM con
+                JavaScript es bastante extensa ya que he desarrollado varios
+                proyectos personales, startups y pequeñas empresas. La creación
+                de aplicaciones web; páginas web y landing pages, creación de
+                aplicaciones móviles con React Native (Expo), manejo de Bases de
+                datos SQL en mayor parte y NoSQL en pocos proyectos, creacion de
+                servicios RESTfull, integración con Google Maps, desarrollo del
+                backend usando Python con Flask, y ReactJS son mi mayor
+                fortaleza.
+                <br />
+                <br />
+                <i>
+                  He desarrollado proyectos con más tecnologías de las
+                  mencionadas, pero no son tan frecuentes.
+                </i>
+              </p>
+            )}
+            {currentLanguage === "en" && (
+              <p>
+                My experience in layout with HTML, CSS, frameworks and libraries
+                for the frontend, as well as handling the DOM with JavaScript is
+                quite extensive as I have developed several personal projects,
+                startups and small businesses. The creation of web applications;
+                web pages and landing pages, creation of mobile applications
+                with React Native (Expo), handling SQL databases for the most
+                part and NoSQL in few projects, creation of RESTfull services,
+                integration with Google Maps, backend development using Python
+                with Flask, and ReactJS are my greatest strength.
+                <br />
+                <br />
+                <i>
+                  I have developed projects with more of the technologies
+                  mentioned, but they are not so frequent.
+                </i>
+              </p>
+            )}
             <div className="grid-skills">
               <div className="grid-item">
                 <img

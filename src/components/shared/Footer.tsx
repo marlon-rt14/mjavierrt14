@@ -2,6 +2,7 @@ import {FormEventHandler, useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
 import {toaster} from "evergreen-ui";
 import {NewtonsCradle, RaceBy} from "@uiball/loaders";
+import {useTranslation} from "react-i18next";
 
 const SERVICE_ID = "service_tbj15i6";
 const TEMPLATE_ID = "template_88h24q3";
@@ -9,6 +10,8 @@ const PUBLIC_KEY = "3dHvsZtymyU0yIj5q";
 
 export const Footer = () => {
   const [sending, setSending] = useState(false);
+
+  const {t} = useTranslation();
 
   const formRef = useRef<any>();
 
@@ -48,19 +51,19 @@ export const Footer = () => {
       <div className="waves waves-middle"></div>
       <article className="aritcle-contact">
         <div className="article-title contact-title">
-          <h1>Contáctame</h1>
+          <h1>{t("contact me")}</h1>
         </div>
         <div className="article-cont contact-cont">
           <div className="article-des contact-des">
             <div className="contact-des-quickly">
-              <h4>Get in touch</h4>
+              {/* <h4>Get in touch</h4> */}
               <ul className="contact__ul">
                 <li className="contact__ul__li">
                   <div className="contact-icon-cont">
                     <i className="bi bi-person-fill key-icon"></i>
                   </div>
                   <div className="contact__li-des">
-                    <h5>Name</h5>
+                    <h5>{t("name")}</h5>
                     <p>Marlon Ruiz</p>
                   </div>
                 </li>
@@ -69,7 +72,7 @@ export const Footer = () => {
                     <i className="fas fa-map-marker-alt key-icon"></i>
                   </div>
                   <div className="contact__li-des">
-                    <h5>Address</h5>
+                    <h5>{t("address")}</h5>
                     <p>Ibarra - Ecuador</p>
                   </div>
                 </li>
@@ -87,14 +90,14 @@ export const Footer = () => {
                     <i className="fas fa-phone-alt key-icon"></i>
                   </div>
                   <div className="contact__li-des">
-                    <h5>Phone</h5>
+                    <h5>{t("phone")}</h5>
                     <p>+593 992623321</p>
                   </div>
                 </li>
               </ul>
             </div>
             <div className="contact-des-form">
-              <h4>Send me a message</h4>
+              <h4>{t("send me a message")}</h4>
               <form
                 ref={formRef}
                 className="contact-form"
@@ -110,21 +113,21 @@ export const Footer = () => {
                 <div className="mb-3">
                   <input
                     type="text"
-                    placeholder="Enter your name"
+                    placeholder={t("enter your name") || ""}
                     name="user_name"
                   />
                 </div>
                 <div className="mb-3">
                   <input
                     type="email"
-                    placeholder="Enter your e-mail"
+                    placeholder={t("enter your email") || ""}
                     name="user_email"
                   />
                 </div>
                 <div className="mb-3">
                   <textarea
                     name="message"
-                    placeholder="Leave your message..."
+                    placeholder={t("leave your message") || ""}
                   ></textarea>
                 </div>
                 <button type="submit" className="cont-sending">
@@ -133,7 +136,7 @@ export const Footer = () => {
                       <RaceBy size={50} color="#fff" />
                     </div>
                   )}
-                  {!sending && "Send"}
+                  {!sending && t("send")}
                 </button>
               </form>
             </div>

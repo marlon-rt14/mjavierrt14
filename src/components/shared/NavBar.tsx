@@ -224,8 +224,8 @@ export const NavBar = () => {
           </li>
           <li className="" style={{listStyle: "none"}}>
             <Toggle
-              checkedChildren={<US />}
-              unCheckedChildren={<ES />}
+              checkedChildren={<ES />}
+              unCheckedChildren={<US />}
               onChange={(checked) => {
                 if (checked) {
                   i18n.changeLanguage("en");
