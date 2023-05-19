@@ -48,15 +48,13 @@ export const SectionAbout = () => {
                 opportunity to acquire new knowledge.
               </p>
             )}
-            <div>
-              <a
-                href={currentLanguage === "es" ? spanishCV : englishCV}
-                target="_blank"
-                className="button-cv button"
-              >
-                {t("download cv")}
-              </a>
-            </div>
+            <a
+              href={currentLanguage === "es" ? spanishCV : englishCV}
+              target="_blank"
+              className="button-cv button"
+            >
+              {t("download cv")}
+            </a>
           </div>
         </div>
       </article>

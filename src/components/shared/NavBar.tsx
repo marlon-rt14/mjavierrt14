@@ -282,11 +282,9 @@ export const NavBar = () => {
           <p>
             {t("i am")} &nbsp; <span className="key-text"></span>
           </p>
-          <div className="form-footer ">
-            <a href="#section-contact" className="button">
-              {t("contact me")}
-            </a>
-          </div>
+          <a href="#section-contact" className="button">
+            {t("contact me")}
+          </a>
         </form>
         <div className="form-img-cont">
           <img src={imageHeader} alt="image-header" />

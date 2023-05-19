@@ -110,27 +110,27 @@ export const Footer = () => {
                   name="from_name"
                   defaultValue={"Marlon Ruiz"}
                 />
-                <div className="mb-3">
+                <div className="mb-2">
                   <input
                     type="text"
                     placeholder={t("enter your name") || ""}
                     name="user_name"
                   />
                 </div>
-                <div className="mb-3">
+                <div className="mb-2">
                   <input
                     type="email"
                     placeholder={t("enter your email") || ""}
                     name="user_email"
                   />
                 </div>
-                <div className="mb-3">
+                <div className="mb-2">
                   <textarea
                     name="message"
                     placeholder={t("leave your message") || ""}
                   ></textarea>
                 </div>
-                <button type="submit" className="cont-sending">
+                <button type="submit" className="cont-sending mt-4">
                   {sending && (
                     <div className="d-flex justify-content-center ">
                       <RaceBy size={50} color="#fff" />
