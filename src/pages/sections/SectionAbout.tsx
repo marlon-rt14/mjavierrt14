@@ -1,6 +1,6 @@
 import {useTranslation} from "react-i18next";
-import spanishCV from "../../dist/spanish/CV-Marlon-s.pdf";
-import englishCV from "../../dist/english/CV-Marlon-e.pdf";
+import spanishCV from "../../resumes/spanish/CV-Marlon-s.pdf";
+import englishCV from "../../resumes/english/CV-Marlon-e.pdf";
 
 export const SectionAbout = () => {
   const {t, i18n} = useTranslation();
