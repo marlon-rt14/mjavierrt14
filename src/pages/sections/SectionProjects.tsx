@@ -16,7 +16,7 @@ interface IProjects {
 
 const INITIAL_PROJECTS: IProjects[] = [
   {
-    title: "Seafood Template",
+    title: "Seafood",
     descriptionES:
       "Este proyecto es una plantilla sobre comida del mar. Es  una página estática. No depende de un servidor para la administración de la página.",
     descriptionEN:
@@ -29,7 +29,7 @@ const INITIAL_PROJECTS: IProjects[] = [
   {
     title: "MOVILITIX",
     descriptionES: (
-      <div>
+      <>
         Esta es una aplicación móvil para la Corporación Favorita desarrollada
         por la empresa{" "}
         <a href="https://www.bitproy.com" target="_blank">
@@ -37,10 +37,10 @@ const INITIAL_PROJECTS: IProjects[] = [
         </a>
         , mi desempeño en este proyecto fue con tecnologías móviles de frontend
         e integración de APIs.
-      </div>
+      </>
     ),
     descriptionEN: (
-      <div>
+      <>
         This is a mobile application for the Favorita Corporation developed by
         by the company bitproy{" "}
         <a href="https://www.bitproy.com" target="_blank">
@@ -48,7 +48,7 @@ const INITIAL_PROJECTS: IProjects[] = [
         </a>
         , my performance in this project was with mobile frontend technologies
         and API integration.
-      </div>
+      </>
     ),
     profilePhoto: ProjectIcons.movilitix,
     linkGallery: "/movilitix",
@@ -58,24 +58,24 @@ const INITIAL_PROJECTS: IProjects[] = [
   {
     title: "RAPIENTREGA",
     descriptionES: (
-      <div>
+      <>
         Esta es una aplicación móvil de delivery desarrollada por la empresa{" "}
         <a href="https://www.bitproy.com" target="_blank">
           Bitproy
         </a>
         , mi desempeño en este proyecto fue con tecnologías móviles de frontend
         e integración de APIs.
-      </div>
+      </>
     ),
     descriptionEN: (
-      <div>
+      <>
         This is a mobile delivery application developed by the company{" "}
         <a href="https://www.bitproy.com" target="_blank">
           Bitproy
         </a>
         , my performance in this project was with mobile frontend technologies
         and API integration.
-      </div>
+      </>
     ),
     profilePhoto: ProjectIcons.rapientrega,
     linkGallery: "/rapientrega",
@@ -86,7 +86,7 @@ const INITIAL_PROJECTS: IProjects[] = [
   {
     title: "EQUATORIAN",
     descriptionES: (
-      <div>
+      <>
         Esta es una plataforma web turística, su uso es para la administración
         de los datos en su versión móvil. Desarrollada para la empresa{" "}
         <a href="https://www.bitproy.com" target="_blank">
@@ -94,10 +94,10 @@ const INITIAL_PROJECTS: IProjects[] = [
         </a>
         , mi desempeño en este proyecto fue con tecnologías web para el frontend
         e integración de APIs.
-      </div>
+      </>
     ),
     descriptionEN: (
-      <div>
+      <>
         This is a tourism web platform, its use is for the administration of the
         data in its mobile version. Developed for the company{" "}
         <a href="https://www.bitproy.com" target="_blank">
@@ -105,7 +105,7 @@ const INITIAL_PROJECTS: IProjects[] = [
         </a>
         , my performance in this project was with web frontend technologies and
         API integration.
-      </div>
+      </>
     ),
     profilePhoto: ProjectIcons.equatorian,
     linkGallery: "/equatorian",
@@ -115,24 +115,24 @@ const INITIAL_PROJECTS: IProjects[] = [
   {
     title: "D'PIPOS",
     descriptionES: (
-      <div>
+      <>
         Esta es una aplicación móvil de delivery desarrollada por la empresa{" "}
         <a href="https://www.bitproy.com" target="_blank">
           Bitproy
         </a>
         , mi desempeño en este proyecto fue con tecnologías móviles de frontend
         e integración de APIs y supervisión del backend.
-      </div>
+      </>
     ),
     descriptionEN: (
-      <div>
+      <>
         This is a mobile delivery application developed by the company{" "}
         <a href="https://www.bitproy.com" target="_blank">
           Bitproy
         </a>
         , my performance in this project was with mobile frontend technologies
         and API integration and backend supervision.
-      </div>
+      </>
     ),
     profilePhoto: ProjectIcons.dpipos,
     linkGallery: "/dpipos",
@@ -143,24 +143,24 @@ const INITIAL_PROJECTS: IProjects[] = [
   {
     title: "ILUSTRO",
     descriptionES: (
-      <div>
+      <>
         Esta es una plataforma web educativa desarrollada por la empresa{" "}
         <a href="https://www.bitproy.com" target="_blank">
           Bitproy
         </a>
         , mi desempeño en este proyecto fue con tecnologías web para el frontend
         e integración de APIs.
-      </div>
+      </>
     ),
     descriptionEN: (
-      <div>
+      <>
         This is a web educational platform developed by the company{" "}
         <a href="https://www.bitproy.com" target="_blank">
           Bitproy
         </a>
         , my performance in this project was with web frontend technologies and
         API integration.
-      </div>
+      </>
     ),
     profilePhoto: ProjectIcons.ilustro,
     linkGallery: "/illustro",
@@ -170,7 +170,7 @@ const INITIAL_PROJECTS: IProjects[] = [
   {
     title: "WE-U",
     descriptionES: (
-      <div>
+      <>
         Esta es una plataforma web dirigida hacia el monitoreo y de
         organizaciones públicas y privadas mediante sectores o áreas del pais,
         para mejorar la seguridad de los ciudadanos; desarrollada por la empresa{" "}
@@ -179,10 +179,10 @@ const INITIAL_PROJECTS: IProjects[] = [
         </a>
         , mi desempeño en este proyecto fue con tecnologías web para el frontend
         e integración de APIs.
-      </div>
+      </>
     ),
     descriptionEN: (
-      <div>
+      <>
         This is a web platform aimed at monitoring and public and private
         organizations through sectors or areas of the country, to improve the
         security of citizens; developed by the company{" "}
@@ -191,7 +191,7 @@ const INITIAL_PROJECTS: IProjects[] = [
         </a>
         , my performance in this project was with web frontend technologies and
         API integration.
-      </div>
+      </>
     ),
     profilePhoto: ProjectIcons.weu,
     linkGallery: "/weu",
@@ -201,7 +201,7 @@ const INITIAL_PROJECTS: IProjects[] = [
   {
     title: "FAUNA INAIG",
     descriptionES: (
-      <div>
+      <>
         Esta es una plataforma web para el registro de todas las especies de
         animales y plantas, su uso es para la administración de la fauna en
         general con información relevante de cada especie. Desarrollada para la
@@ -211,10 +211,10 @@ const INITIAL_PROJECTS: IProjects[] = [
         </a>
         , mi desempeño en este proyecto fue con tecnologías web para el frontend
         e integración de APIs y Amplify.
-      </div>
+      </>
     ),
     descriptionEN: (
-      <div>
+      <>
         This is a web platform for the registration of all species of animals
         and plants, its use is for the management of wildlife in general with
         relevant information for each species. Developed for the company{" "}
@@ -223,7 +223,7 @@ const INITIAL_PROJECTS: IProjects[] = [
         </a>
         , My performance in this project was with web technologies for the
         frontend and integration of APIs and Amplify.{" "}
-      </div>
+      </>
     ),
     profilePhoto: ProjectIcons.fauna,
     linkGallery: "/fauna",
@@ -244,7 +244,7 @@ export const SectionPropjects = () => {
       <div className="waves waves-up"></div>
       <div className="waves waves-down"></div>
       <div className="waves waves-middle"></div>
-      <article className="aritcle-projects">
+      <article className="article-projects">
         <div className="article-title projects-title">
           <h1>{t("my projects")}</h1>
         </div>
@@ -265,7 +265,7 @@ export const SectionPropjects = () => {
               {currentLanguage === "en" && " to see all of my repositories..."}
             </p>
             <Carousel
-              className="w-100 mt-3"
+              className="w-100 mt-3 carousel-projects"
               withIndicators
               slideSize="33.333333%"
               slideGap="md"
@@ -273,7 +273,7 @@ export const SectionPropjects = () => {
               align="start"
               breakpoints={[
                 {maxWidth: "md", slideSize: "50%"},
-                {maxWidth: "sm", slideSize: "100%", slideGap: 0},
+                {maxWidth: "sm", slideSize: "100%"},
               ]}
               styles={{
                 indicator: {
@@ -290,8 +290,8 @@ export const SectionPropjects = () => {
             >
               {projects.map((project, index) => {
                 return (
-                  <Carousel.Slide key={index}>
-                    <div className="">
+                  <Carousel.Slide key={index} className="carousel-slide">
+                    <>
                       <div className="carousel-card">
                         <div className="carousel-card-header">
                           <h1>{project.title}</h1>
@@ -338,7 +338,7 @@ export const SectionPropjects = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </>
                   </Carousel.Slide>
                 );
               })}

@@ -169,6 +169,7 @@ const runTyping = () => {
     type_text.textContent = words[i];
     //type_text.style.animation = `typing 2s steps(${words[i].length}, end) infinite alternate`;
     //type_text.style.animation = `typing 2s  infinite alternate ease-in-out`;
+
     type_text.style.width = `${
       i === 0 ? 9 : i === 1 ? 13 : i === 2 ? 16 : 17
     }ch`;
@@ -274,15 +275,16 @@ export const NavBar = () => {
           </div>
         </ul>
       </nav>
-      <div className="header__div-container">
-        <form className="header__form">
+      <div className="header__div-container ">
+        <form className="header__form ">
           <p>{t("hello my name is")}</p>
           <h2>Marlon Javier Ruiz</h2>
           <p className="contador" hidden></p>
-          <p>
-            {t("i am")} &nbsp; <span className="key-text"></span>
-          </p>
-          <a href="#section-contact" className="button">
+          <div className="iam">
+            <p>{t("i am")} &nbsp; </p>
+            <span className="key-text"></span>
+          </div>
+          <a href="#section-contact" className="button btn-contact-me">
             {t("contact me")}
           </a>
         </form>

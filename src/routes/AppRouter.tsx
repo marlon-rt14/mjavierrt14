@@ -3,6 +3,7 @@ import "../styles/normalize.css";
 import "../styles/main.css";
 import "../styles/animations.css";
 import "../styles/gallery-project.css";
+import "../styles/mediaQueries.css";
 import {MainLayout} from "../components/shared/MainLayout";
 import {HomePage} from "../pages/HomePage";
 import {MovilitixPage} from "../pages/MovilitixPage";

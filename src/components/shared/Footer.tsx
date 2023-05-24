@@ -49,7 +49,7 @@ export const Footer = () => {
       <div className="waves waves-up"></div>
       <div className="waves waves-down"></div>
       <div className="waves waves-middle"></div>
-      <article className="aritcle-contact">
+      <article className="article-contact">
         <div className="article-title contact-title">
           <h1>{t("contact me")}</h1>
         </div>
