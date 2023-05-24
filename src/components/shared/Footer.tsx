@@ -47,7 +47,7 @@ export const Footer = () => {
   return (
     <section className="section-contact" id="section-contact">
       <div className="waves waves-up"></div>
-      {/* <div className="waves waves-down"></div> */}
+      <div className="waves waves-down"></div>
       <div className="waves waves-middle"></div>
       <article className="article-contact">
         <div className="article-title contact-title">

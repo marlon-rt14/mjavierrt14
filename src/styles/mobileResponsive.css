@@ -159,6 +159,10 @@
     position: relative;
   }
 
+  .section-contact > .waves-down {
+    display: none;
+  }
+
   .article-contact {
     height: 100%;
     margin-bottom: 5rem;
