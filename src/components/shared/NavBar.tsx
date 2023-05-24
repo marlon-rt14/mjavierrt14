@@ -276,6 +276,19 @@ export const NavBar = () => {
         </ul>
       </nav>
       <div className="header__div-container ">
+        <div className="pe-3 toggle-languaje" style={{alignSelf: "flex-end"}}>
+          <Toggle
+            checkedChildren={<ES />}
+            unCheckedChildren={<US />}
+            onChange={(checked) => {
+              if (checked) {
+                i18n.changeLanguage("en");
+              } else {
+                i18n.changeLanguage("es");
+              }
+            }}
+          />
+        </div>
         <form className="header__form ">
           <p>{t("hello my name is")}</p>
           <h2>Marlon Javier Ruiz</h2>

@@ -190,6 +190,10 @@ input[type="submit"]:active,
   /* border: 2px solid blue; */
 }
 
+.toggle-languaje {
+  display: none;
+}
+
 .header__div-container {
   padding: 5rem;
   color: var(--string-color);
@@ -346,7 +350,6 @@ article {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid red; */
 }
 
 .article-des h4 {
@@ -357,7 +360,6 @@ article {
   margin: 1rem 0rem;
   margin-bottom: 3rem;
   padding-right: 1rem;
-  /* border: 2px solid greenyellow; */
 }
 
 .button-cv {
