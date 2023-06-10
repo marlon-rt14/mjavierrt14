@@ -24,28 +24,56 @@ export const SectionAbout = () => {
             {currentLanguage === "es" && (
               <p>
                 <strong>Desarrollador backend</strong> y
-                <strong> Desarrollador web</strong> con 4 años de experiencia,
-                siempre he sido un apasionado de la informática desde muy joven.
-                He estado trabajando con tecnologías de desarrollo web hace 4
-                años y tecnologías para backend por 3 años.
-                <strong> Me gustan los desafíos</strong> y superarme a mí mismo
-                involucrándome en proyectos de mediana y alta complejidad sin
-                miedo a <strong>aprender nuevas tecnologías</strong> y nunca
-                perder la oportunidad de ganar nuevos conocimientos.
+                <strong> Desarrollador web</strong> con 4 años de experiencia en
+                el desarrollo frontend utilizando React.js, Apollo Client y
+                JavaScript. Tengo un{" "}
+                <strong>dominio experto en JavaScript</strong> y he trabajado en
+                numerosos proyectos utilizando tecnologías como HTML, CSS y
+                bibliotecas como Bootstrap, Material UI y muchas más.
+                <br />
+                <br />
+                En el ámbito del backend, tengo{" "}
+                <strong>3 años de experiencia trabajando con Python</strong>. He
+                utilizado frameworks como Flask y he utilizado herramientas como
+                SQLAlchemy para interactuar con bases de datos. También tengo
+                conocimientos en GraphQL, específicamente con la biblioteca
+                Graphene- SQLAlchemy, para <strong>crear APIs flexibles</strong>
+                . Además, uso Docker, lo que me permite desplegar aplicaciones
+                de manera rápida y eficiente.
+                <br />
+                <br />
+                Mis conocimientos y mi experiencia me permite trabajar en
+                proyectos desafiantes y estoy siempre interesado en{" "}
+                <strong>
+                  ampliar mis conocimientos y habilidades tecnológicas
+                </strong>
+                .
               </p>
             )}
             {currentLanguage === "en" && (
               <p>
                 <strong>Backend developer</strong> and
-                <strong> Web developer </strong>with 4 years of experience, I
-                have always been passionate about IT since I was very young. I
-                have been working with web development technologies for 4 years
-                and 3 years with backend technologies.
-                <strong> I like challenges</strong> and I like to overcome
-                myself getting involved in projects of medium and high
-                complexity without fear of
-                <strong> learning new technologies </strong>and I never miss the
-                opportunity to acquire new knowledge.
+                <strong> Web developer </strong>with 4 years of experience in
+                frontend development using React.js, Apollo Client and
+                JavaScript. I'm <strong>master level in JavaScript</strong> and
+                have worked on numerous projects using technologies like HTML,
+                CSS and libraries like Bootstrap, Material UI and many more.
+                <br />
+                <br />
+                On the backend side, I have{" "}
+                <strong>3 years of experience working with Python</strong>. I
+                have used frameworks like Flask and I have used tools like
+                SQLAlchemy to interact with databases. I also have knowledge in
+                GraphQL, specifically with the Graphene- SQLAlchemy library, to{" "}
+                <strong>create flexible APIs</strong>. In addition, I use
+                Docker, which allows me to deploy applications quickly and
+                efficiently.
+                <br />
+                <br />
+                My knowledge and experience allows me to work on challenging
+                projects and I am always interested in{" "}
+                <strong>expanding my knowledge and technological skills</strong>
+                .
               </p>
             )}
             <a

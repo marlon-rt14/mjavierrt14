@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import {toaster} from "evergreen-ui";
 import {NewtonsCradle, RaceBy} from "@uiball/loaders";
 import {useTranslation} from "react-i18next";
+import {SocialIcon} from "react-social-icons";
 
 const SERVICE_ID = "service_tbj15i6";
 const TEMPLATE_ID = "template_88h24q3";
@@ -54,9 +55,23 @@ export const Footer = () => {
           <h1>{t("contact me")}</h1>
         </div>
         <div className="article-cont contact-cont">
-          <div className="article-des contact-des">
+          <div className="article-des contact-des ">
             <div className="contact-des-quickly">
               {/* <h4>Get in touch</h4> */}
+              <div className="mb-5 d-flex justify-content-center gap-3">
+                <SocialIcon
+                  url="https://www.linkedin.com/in/marlon-ruiz-1b7a0b186"
+                  fgColor="white"
+                />
+                <SocialIcon
+                  url="https://www.instagram.com/marlon_rt14/"
+                  fgColor="white"
+                />
+                <SocialIcon
+                  url="https://api.whatsapp.com/send/?phone=%2B593992623321&text&type=phone_number&app_absent=0"
+                  fgColor="white"
+                />
+              </div>
               <ul className="contact__ul">
                 <li className="contact__ul__li">
                   <div className="contact-icon-cont">
