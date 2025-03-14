@@ -349,17 +349,12 @@ article {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+  /* border: 1px solid red; */
 }
 
 .article-des h4 {
   margin-bottom: 0.5rem;
-}
-
-.article-des p {
-  margin: 1rem 0rem;
-  margin-bottom: 3rem;
-  padding-right: 1rem;
 }
 
 .button-cv {
